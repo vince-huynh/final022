@@ -51,10 +51,6 @@ public delegate void CustomEventHandeler(object source, CustomEventArgs e);
 public class CustomEventArgs : EventArgs
 {
 	public string userName { get; set; }
-	public CustomEventArgs(DateTime time)
-	{
-		this.time = time;
-	}
 
 	public CustomEventArgs(string userName)
     {
