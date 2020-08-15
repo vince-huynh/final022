@@ -22,11 +22,6 @@ public class Target
 {
 	public string name { get; set; }
 
-	public void HandleAlarm(object sender, CustomEventArgs e)
-	{
-		Console.WriteLine("Get out of bed it's {0}", e.time);
-	}
-
 	public void CheckUsernameAlarm(object sender, CustomEventArgs e)
 	{
 		if(name == "Jack")
@@ -55,7 +50,6 @@ public delegate void CustomEventHandeler(object source, CustomEventArgs e);
 	
 public class CustomEventArgs : EventArgs
 {
-	public DateTime time { get; set; }
 	public string userName { get; set; }
 	public CustomEventArgs(DateTime time)
 	{
