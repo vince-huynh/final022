@@ -50,7 +50,7 @@ public class Custom
 
 	}
 }
-//test
+
 public delegate void CustomEventHandeler(object source, CustomEventArgs e);
 	
 public class CustomEventArgs : EventArgs
